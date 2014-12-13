@@ -1,19 +1,47 @@
 #Meeti for Java
 https://github.com/MOBAGEL/MeetiFrame-Java
 
-#遙控車指令列表
-1 初始化遙控車  
-t 遙控車拍照  
-l0 關左燈  
-l1 開左燈  
-r0 關右燈  
-r1 開右燈  
-ｂ 後退  
-f 前進  
-lf 左轉  
-rf 右轉  
-s 停止  
+#機器遙控車指令
 
+###基本指令
+1	初始化遙控車  
+l0	關左燈  
+l1	開左燈  
+r0	關右燈  
+r1	開右燈  
+lb	左邊輪子往後轉  
+lf	左邊輪子往前轉  
+ls	左邊輪子停止  
+rb	右邊輪子往後轉  
+rf	右邊輪子往前轉  
+rs	右邊輪子停止  
+
+### 複合指令
+ｂ	後退(lb & rb)  
+f	前進(lf & lf)  
+l1+	關右燈，只開左燈(r0 & l1)  
+r1+	關左燈，只開右燈(l0 & r1)  
+ll	左旋(rf & lb)  
+ll+	左轉(rf & ls)  
+rr	右旋(lf & rb)  
+rr+	右轉(lf & rs)  
+ol	開燈(l1 & r1)  
+sl	關燈(l0 & r0)  
+sm	停止移動(ls & rs)  
+s	停止(sl & sm)  
+
+###組合指令
+al	閃大燈  
+ss	蛇行  
+tl	打左轉燈  
+tr	打右轉燈  
+rtr	打右轉燈之後右轉  
+ltl	打左轉燈之後左轉  
+tremble	抖動  
+sf	慢速前進  
+sb	慢速後退  
+dl	向左甩尾  
+dr	向右甩尾  
 
 
 # 目前提供的使用者帳號列表
